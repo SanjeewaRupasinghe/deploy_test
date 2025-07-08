@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Test Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .contact-info h4 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-right: 15px;
+            width: 30px;
+        }
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        .btn-primary {
+            background-color: #667eea;
+            border-color: #667eea;
+        }
+        .btn-primary:hover {
+            background-color: #5a67d8;
+            border-color: #5a67d8;
+        }
+        .map-container {
+            height: 300px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TestSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Contact Us</h1>
+            <p class="lead">Get in touch with our team for your next project</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Send us a Message</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company (Optional)</label>
+                            <input type="text" class="form-control" id="company">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service Interest</label>
+                            <select class="form-select" id="service">
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="ecommerce">E-commerce Solutions</option>
+                                <option value="mobile-apps">Mobile Apps</option>
+                                <option value="ui-ux">UI/UX Design</option>
+                                <option value="maintenance">Maintenance & Support</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="budget" class="form-label">Project Budget</label>
+                            <select class="form-select" id="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-1k">Under $1,000</option>
+                                <option value="1k-5k">$1,000 - $5,000</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-plus">$10,000+</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project requirements, timeline, and any specific features you need..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <div class="contact-info-item">
+                            <span style="font-size: 1.5rem; color: #667eea; margin-right: 15px; width: 30px;">📍</span>
+                            <div>
+                                <strong>Address</strong><br>
+                                123 Business Street<br>
+                                Dubai, UAE 12345
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span style="font-size: 1.5rem; color: #667eea; margin-right: 15px; width: 30px;">📞</span>
+                            <div>
+                                <strong>Phone</strong><br>
+                                +971 (04) 123-4567
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span style="font-size: 1.5rem; color: #667eea; margin-right: 15px; width: 30px;">✉️</span>
+                            <div>
+                                <strong>Email</strong><br>
+                                info@testsite.com
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <span style="font-size: 1.5rem; color: #667eea; margin-right: 15px; width: 30px;">🕒</span>
+                            <div>
+                                <strong>Business Hours</strong><br>
+                                Mon - Fri: 9:00 AM - 6:00 PM<br>
+                                Sat: 10:00 AM - 4:00 PM<br>
+                                Sun: Closed
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>Follow Us</h4>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-decoration-none" style="font-size: 1.5rem;">📘</a>
+                            <a href="#" class="text-decoration-none" style="font-size: 1.5rem;">🐦</a>
+                            <a href="#" class="text-decoration-none" style="font-size: 1.5rem;">📷</a>
+                            <a href="#" class="text-decoration-none" style="font-size: 1.5rem;">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Find Us</h2>
+            <div class="map-container">
+                <div class="text-center">
+                    <h4>🗺️</h4>
+                    <p>Interactive Map Would Go Here</p>
+                    <small class="text-muted">In a real website, this would be a Google Maps or similar map integration</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    How long does it take to build a website?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The timeline depends on the complexity of your project. A basic website typically takes 2-4 weeks, while more complex projects with custom features can take 6-12 weeks.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    Do you provide ongoing support?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer various support packages including regular updates, security monitoring, backup services, and technical support to keep your website running smoothly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    Can you help with SEO and digital marketing?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We offer comprehensive SEO optimization, social media marketing, content marketing, and analytics services to help your business grow online.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept various payment methods including bank transfers, credit cards, PayPal, and cryptocurrency. Payment plans are available for larger projects.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>TestSite</h5>
+                    <p>A sample website for testing GitHub Pages deployment.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="services.html" class="text-light">Services</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 TestSite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

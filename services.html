@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Test Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .service-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .pricing-card {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .pricing-card.featured {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TestSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Our Services</h1>
+            <p class="lead">Comprehensive web solutions for your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon text-primary">🌐</div>
+                            <h4 class="card-title">Web Development</h4>
+                            <p class="card-text">Custom websites built with modern technologies and responsive design. We create fast, secure, and scalable web applications.</p>
+                            <ul class="list-unstyled">
+                                <li>✓ Responsive Design</li>
+                                <li>✓ SEO Optimization</li>
+                                <li>✓ Fast Loading</li>
+                                <li>✓ Cross-browser Compatible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon text-success">🛒</div>
+                            <h4 class="card-title">E-commerce Solutions</h4>
+                            <p class="card-text">Complete online store solutions with payment integration, inventory management, and customer support systems.</p>
+                            <ul class="list-unstyled">
+                                <li>✓ Payment Integration</li>
+                                <li>✓ Inventory Management</li>
+                                <li>✓ Order Tracking</li>
+                                <li>✓ Customer Dashboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon text-info">📱</div>
+                            <h4 class="card-title">Mobile Apps</h4>
+                            <p class="card-text">Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+                            <ul class="list-unstyled">
+                                <li>✓ iOS & Android</li>
+                                <li>✓ Cross-platform</li>
+                                <li>✓ App Store Publishing</li>
+                                <li>✓ Push Notifications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon text-warning">🎨</div>
+                            <h4 class="card-title">UI/UX Design</h4>
+                            <p class="card-text">User-centered design solutions that create engaging and intuitive digital experiences for your audience.</p>
+                            <ul class="list-unstyled">
+                                <li>✓ User Research</li>
+                                <li>✓ Wireframing</li>
+                                <li>✓ Prototyping</li>
+                                <li>✓ Visual Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon text-danger">🔧</div>
+                            <h4 class="card-title">Maintenance & Support</h4>
+                            <p class="card-text">Ongoing website maintenance, security updates, and technical support to keep your site running smoothly.</p>
+                            <ul class="list-unstyled">
+                                <li>✓ Regular Updates</li>
+                                <li>✓ Security Monitoring</li>
+                                <li>✓ Backup Services</li>
+                                <li>✓ 24/7 Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon text-secondary">📊</div>
+                            <h4 class="card-title">Digital Marketing</h4>
+                            <p class="card-text">SEO optimization, social media marketing, and analytics to help your business grow online.</p>
+                            <ul class="list-unstyled">
+                                <li>✓ SEO Optimization</li>
+                                <li>✓ Social Media</li>
+                                <li>✓ Content Marketing</li>
+                                <li>✓ Analytics & Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing Plans</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">$299</div>
+                        <p class="text-muted">Perfect for small businesses</p>
+                        <ul class="list-unstyled">
+                            <li>5 Page Website</li>
+                            <li>Responsive Design</li>
+                            <li>Basic SEO</li>
+                            <li>Contact Form</li>
+                            <li>1 Month Support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <h3>Professional</h3>
+                        <div class="price">$599</div>
+                        <p class="text-muted">Most popular choice</p>
+                        <ul class="list-unstyled">
+                            <li>10 Page Website</li>
+                            <li>Responsive Design</li>
+                            <li>Advanced SEO</li>
+                            <li>Contact & Quote Forms</li>
+                            <li>3 Months Support</li>
+                            <li>Analytics Setup</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">$999</div>
+                        <p class="text-muted">For large businesses</p>
+                        <ul class="list-unstyled">
+                            <li>Unlimited Pages</li>
+                            <li>Custom Design</li>
+                            <li>E-commerce Ready</li>
+                            <li>Advanced Features</li>
+                            <li>6 Months Support</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Start Your Project?</h2>
+            <p class="lead mb-4">Contact us today for a free consultation and quote.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Get Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>TestSite</h5>
+                    <p>A sample website for testing GitHub Pages deployment.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="services.html" class="text-light">Services</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 TestSite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
